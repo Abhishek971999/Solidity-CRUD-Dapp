@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+	<script src="https://kit.fontawesome.com/abae74555f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+          <h3 class="text-center m-4"><u>Solidity CRUD Dapp</u></h3>
+          <div class="row">
+		  <div class="col-sm-12 col-lg-6 mb-4">
+		  <form id="create">
+            <h4>Create user</h4>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="form-control" placeholder="Enter Name.."></input>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i>&nbsp;Add</button>
+            <p id="create-result"></p>
+          </form></div>
+		  
+
+          <hr>
+		  <div class="col-sm-12 col-lg-6 mb-4">
+          <form id="read">
+            <h4>Read user</h4>
+            <div class="form-group">
+              <label for="read-id">ID</label>
+              <input id="read-id" type="number" class="form-control" placeholder="Enter ID of user.."></input>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-glasses"></i>&nbsp;View</button>
+            <p id="read-result"></p>
+          </form></div>
+
+          <hr>
+		<div class="col-sm-12 col-lg-6">
+          <form id="edit">
+            <h4>Edit user</h4>
+            <div class="form-group">
+              <label for="edit-id">ID</label>
+              <input id="edit-id" type="number" class="form-control" placeholder="Enter ID of user.."></input>
+              <label for="edit-name">Name</label>
+              <input id="edit-name" type="text" class="form-control"placeholder="Enter name of user.."></input>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-user-edit"></i>&nbsp;Update</button>
+            <p id="edit-result"></p>
+          </form>
+		</div>
+          <hr>
+<div class="col-sm-12 col-lg-6">
+          <form id="delete">
+            <h4>Delete user</h4>
+            <div class="form-group">
+              <label for="delete-id">ID</label>
+              <input id="delete-id" type="number" class="form-control" placeholder="Enter ID of user.."></input>
+            </div>
+            <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>&nbsp;Delete</button>
+            <p id="delete-result"></p>
+          </form>
+		  </div>
+</div>
+    </div>
+  </body>
+</html>
